@@ -1,0 +1,296 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and headers */
+body {
+    font-family: Arial, sans-serif;
+    color: #310801; 
+    background-color: #390101f0; 
+}
+
+/* Common Section Background */
+.section-bg {
+    background-color: #f7eeda; 
+}
+
+/* Header menu Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #440101f0;
+    color: #f47950;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+}
+
+header .menu a {
+    color: #fb9f837c;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section with GIF */
+.hero {
+    height: 100vh;
+    background: url('images/fall.gif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(134, 34, 4);
+}
+
+/* The paragraph inside the hero section */
+.hero .hero-content p {
+    font-size: 24px; 
+    color: #fa9c70; 
+    font-style: italic; 
+}
+
+.hero h1 {
+    font-size: 6em; 
+}
+
+/* Links Section and background */
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f7eeda; 
+}
+
+.link-item {
+    width: 75%;
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.53);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.link-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.link-item h2 {
+    margin-top: 10px;
+    color: #000000fe; 
+    font-size: 1.5em;
+}
+
+.link-item p {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.link-item a {
+    color: #644303;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-item a:hover {
+    text-decoration: underline;
+}
+
+/* About Section styling */
+.about {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    padding: 50px;             
+    text-align: center;        
+    background-color: #f7eeda; 
+    min-height: 50vh;         
+}
+
+.about-image {
+    width: 30%;               
+    border-radius: 20px;      
+    margin-bottom: 20px;     
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    .about-image {
+        width: 80%; 
+    }
+    
+    .about h2 {
+        font-size: 2em; 
+    }
+
+    .about p {
+        font-size: 1em; 
+    }
+}
+
+footer {
+    background-color: #440101f0; 
+    color: #ffffff !important; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/* Contacts Section styling */
+.contacts {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    padding: 40px;  
+    text-align: center;        
+    background-color: #f7eeda; 
+    flex: 1; 
+    max-height: 200vh; 
+    overflow: auto;   
+}
+
+.contacts h1 {
+    margin-bottom: 50px;  
+}
+
+.contacts p {
+    margin: 10px 0; 
+}
+
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 50px; 
+    align-items: center; 
+}
+
+.contacts label {
+    margin-bottom: 5px;
+    align-self: flex-start; 
+}
+
+.contacts input,
+.contacts textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.contacts textarea {
+    height: 100px; 
+}
+
+.contacts button {
+    padding: 10px 20px;
+    background-color: #440101f0;
+    color: #f47950;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacts button:hover {
+    background-color: #f47950; 
+}
+
+/* Social Life Section */
+.intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f7eeda; 
+}
+
+/* Photo Rows */
+.photos {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+    background-color: #fbebe3; 
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.photo-row img {
+    width: 600px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.club-list li, .event-list li {
+    color: #310801; 
+}
+
+.intro h2, .intro p,
+.clubs h2, .events h2 {
+    color: #310801; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; 
+}
+
+p, li {
+    color: #310801; 
+}
+
+.learn-more {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.short-photo {
+    width: 500px; 
+    height: 500px;
+}
+
+.netflix-recommendations {
+    padding: 20px; 
+    background-color: #f7eeda; 
+}
+
+.recommendation-list {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.recommendation-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #310801;
+}
+
+
